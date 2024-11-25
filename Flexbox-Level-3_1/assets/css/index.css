@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "Raleway-Light";
-    src: url(../font/Raleway/Raleway-Light.ttf);
+  font-family: "Raleway-Light";
+  src: url(../font/Raleway/Raleway-Light.ttf);
 }
 
 * {
@@ -16,15 +16,17 @@
 
 html {
   font-size: 10px;
-  font-family: "Raleway-Var";
+  font-family: "Raleway-Light";
 }
 
+/*  % Gestaltung vom Header */
 header {
   height: 76px;
   border-bottom: #66666657 1px solid;
   /* position: fixed; */
 }
 
+/*  % Die Navigationsleiste wird 'gespaced' */
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -32,6 +34,7 @@ nav {
   padding: 20px;
 }
 
+/*  % Text und Logo bekomen Farbe, Font-Size und die bullets verschwinden, sowie das Einbinden der Hover Effekte */
 a {
   text-decoration: none;
   color: #333;
@@ -48,7 +51,6 @@ a {
 
 ul {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   gap: 0 30px;
 }
@@ -61,13 +63,15 @@ li a:hover {
   color: #337ab7;
 }
 
+
+/*  % Einbinden von Bild und Text, sowie die Gestaltung der Buttons */
 .homePic {
   background-image: url("../img/div.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1512px;
   height: 1007.53px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,19 +79,57 @@ li a:hover {
   column-gap: 25px 0;
 }
 
-
 .homeH1 {
-    font-size: 6rem;
-    font-family: "Raleway-Light";
+  font-size: 6rem;
+  font-family: "Raleway-Light";
 }
 
 .homePSize {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .homeColumn {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 24px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px 0;
 }
+
+.textDesign {
+  text-transform: uppercase;
+  width: 200px;
+  height: 54px;
+  color: #ffffff;
+  /* background-color: pink; */
+}
+
+.btnHome {
+    display: flex;
+    justify-content: center;
+    gap: 0 8px;
+}
+
+#firstBtnPurple {
+  background-color: #745CF9;
+  border: none;
+}
+
+#firstBtnPurple:hover {
+    background-color:#604dd0;
+    transition-delay: 100ms;
+}
+
+#secBtnClear {
+    border: 2px solid #FFFFFF;
+    background: none;
+}
+
+#secBtnClear:hover {
+    color: black;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    transition-delay: 100ms;
+}
+
+
+
