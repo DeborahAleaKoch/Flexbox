@@ -233,6 +233,7 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding-top: 40px;
 }
 
 .photoWrap {
@@ -246,20 +247,65 @@ li a:hover {
   
 }
 
-/* .photoSize {
-  flex: 1;
-  padding-bottom: 116px;
+.photoSize {
+  /* flex: 1; */
+  /* padding-bottom: 116px; */
   width: 100%;
-} */
+  height: auto;
+}
 
 .photoWrap div {
-  width: 25%;
-  height: 18%;
+  
   /* overflow: hidden; */
-  background-color: pink;
+  /* border: 3px solid pink; */
+  margin-bottom: 116px;
 
 }
 
 .photoWrap div img {
   object-fit: cover;
+  width: 38.55rem;
+  height: 26.88rem;
+}
+
+.projectP {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  text-align: center;
+}
+
+.projectP2 {
+  color: var(--basic-white);
+  font-size: 1.4rem;
+}
+
+/* #Customers */
+
+.bg_Customers{
+  background-image: url("../img/section-footer.png");
+  background-size: cover;
+  width: 100%;
+  height: 46.7rem;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.flex_cust {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 74px;
+}
+
+.customP {
+  font-size: 1.4rem;
+  padding: 0 370px ;
+  line-height: 1.8;
+}
+
+.mm-Photo {
+  width: 100px;
+  height: 100px;
+ 
 }
