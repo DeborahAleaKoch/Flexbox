@@ -28,6 +28,7 @@ html {
   --dark-blue: #0E1015;
   --p-gray: #8C979E;
   --bg-gray: #F5F5F5;
+  --dark-night-blue: #0E1015;
 }
 
 /*  % Gestaltung vom Header */
@@ -178,7 +179,7 @@ li a:hover {
   line-height: 1.8;
 
 }
-
+/* # Portfolio Slide */
 .bg-portfolio {
   background-color: var(--bg-gray);
   height: 644px;
@@ -215,4 +216,50 @@ li a:hover {
   padding:0 5% ;
   text-align: center;
   line-height: 1.8;
+  color: var(--p-gray);
+}
+
+/* # Limitless Slide */
+.limitless {  
+  padding-top: 96px;
+}
+
+/* #LatestProject */
+
+.bg_latestProject {
+  background-color: var(--dark-night-blue);
+  color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.photoWrap {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.photoSize1 {
+  width: 25%;
+  
+}
+
+/* .photoSize {
+  flex: 1;
+  padding-bottom: 116px;
+  width: 100%;
+} */
+
+.photoWrap div {
+  width: 25%;
+  height: 18%;
+  /* overflow: hidden; */
+  background-color: pink;
+
+}
+
+.photoWrap div img {
+  object-fit: cover;
 }
