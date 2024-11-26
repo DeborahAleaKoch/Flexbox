@@ -19,6 +19,17 @@ html {
   font-family: "Raleway-Light";
 }
 
+/*  $ general Stylings */
+:root {
+  --light-gray: #666666;
+  --dark-gray: #4c4c4c;
+  --primary-purple: #745cf9;
+  --basic-white: #ffffff;
+  --dark-blue: #0E1015;
+  --p-gray: #8C979E;
+  --bg-gray: #F5F5F5;
+}
+
 /*  % Gestaltung vom Header */
 header {
   height: 76px;
@@ -69,8 +80,7 @@ li a:hover {
   background-image: url("../img/div.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1512px;
-  height: 1007.53px;
+  height: calc(100vh - 76px);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -82,6 +92,7 @@ li a:hover {
 .homeH1 {
   font-size: 6rem;
   font-family: "Raleway-Light";
+  font-weight: 300;
 }
 
 .homePSize {
@@ -107,11 +118,13 @@ li a:hover {
     display: flex;
     justify-content: center;
     gap: 0 8px;
+
 }
 
 #firstBtnPurple {
   background-color: #745CF9;
   border: none;
+  color: var(--basic-white);
 }
 
 #firstBtnPurple:hover {
@@ -131,5 +144,75 @@ li a:hover {
     transition-delay: 100ms;
 }
 
+/* # SEO Sliede */
 
 
+.flexboxSection {
+  height: 452px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.secondFlexbox {
+  display: flex;
+  gap: 0 127px;
+  align-items: center;
+  justify-content: center;
+}
+.sectionHeadline{
+  font-size: 3rem;
+}
+
+.sec2-SEO-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.lorem {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--p-gray);
+  width: 356px;
+  line-height: 1.8;
+
+}
+
+.bg-portfolio {
+  background-color: var(--bg-gray);
+  height: 644px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-parallax {
+  background-image: url("../img/section.jpg");
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  color: var(--basic-white);
+  height: 438px;
+}
+
+.thirdFlexboxColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px 0;
+}
+
+.parallaxHeadline {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.lorem2 {
+  font-size: 1.4rem;
+  padding:0 5% ;
+  text-align: center;
+  line-height: 1.8;
+}
